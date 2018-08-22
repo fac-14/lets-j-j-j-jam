@@ -1,0 +1,20 @@
+{
+  "name": "lets-j-j-j-jam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac-14/lets-j-j-j-jam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac-14/lets-j-j-j-jam/issues"
+  },
+  "homepage": "https://github.com/fac-14/lets-j-j-j-jam#readme"
+}
