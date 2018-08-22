@@ -28,8 +28,6 @@ tape("Posting on add item should return expected results", t => {
     .send(addItem)
     .set("Accept", "application/json")
     .expect(302)
-    // THIS BIT NEEDS TO BE FIXED!
-    // .expect({ Location: "/" })
     .end((err, res) => {
       t.error(err, "no error");
       t.equals(typeof res, "object", "res should be object");
