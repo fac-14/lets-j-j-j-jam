@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc tests/*.test.js tape | tap-spec",
+    "test": "nyc node src/tests/*.test.js tape | tap-spec",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
