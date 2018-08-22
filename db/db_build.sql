@@ -28,7 +28,7 @@ BEGIN;
     'https://medium.freecodecamp.org/https-explained-with-carrier-pigeons-7029d2193351', 
     11,
     'Great article covering encryption and http protocols',
-    ['HTTPS', 'CRYPTOGRAPHY', 'SECURITY'],
+    '{"HTTPS", "CRYPTOGRAPHY", "SECURITY"}',
     'https://cdn-images-1.medium.com/max/800/1*vHF6NNdZX9ziiW_uRYzvAA.png',
     1
     );
