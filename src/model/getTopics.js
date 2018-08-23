@@ -1,16 +1,14 @@
-const db = require('../../db/db_connection');
+const db = require("../../db/db_connection");
 
-const getTopics = ( ) => {
-    db.query(
-    `SELECT * FROM topics`
-    )
-    .then(res => console.log('Queried topics', res))
-    .catch(err => console.error('error!', err))
-}
+const getTopics = () => {
+  db.query(`SELECT * FROM topics`)
+    .then(res => console.log("Queried topics", res))
+    .catch(err => console.error("error!", err));
+};
 
-getTopics();
+// getTopics();
 
 module.exports = getTopics;
 // module.exports = db.query(
-//     `SELECT * FROM topics` 
+//     `SELECT * FROM topics`
 // );
