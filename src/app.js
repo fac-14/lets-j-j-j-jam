@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const bodyParser = require('body-parser')
 
 // create express app
 const app = express();
@@ -25,6 +26,8 @@ app.engine(
 
 // set the port
 app.set("port", process.env.PORT || 2000);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(controllers);
 
 module.exports = app;
