@@ -1,15 +1,15 @@
-const db = require('../../db/db_connection');
+const db = require("../../db/db_connection");
 
 // Get single article details
-    // get all info where article_id = id
+// get all info where article_id = id
 
-    const getArticleDetail = (name) => {
-        db.query (  
-        `SELECT * FROM articles INNER JOIN topics ON articles.topic_id = topics.id WHERE topics.topic_name = '${name}'`
-    )
-    .then(res => console.log('Queried article detail', res))
-    .catch(err => console.error('error!', err))
-}
+const getArticleDetail = id => {
+  return new Promise((resolve, reject) => {
+    db.query(`SELECT * FROM articles WHERE id = '${id}'`)
+      .then(res => resolve(res))
+      .catch(err => reject(err));
+  });
+};
 
 // getArticleDetail(1);
 

@@ -1,1 +1,10 @@
-<h1>Articles are here</h1>
+<h1>{{{article.title}}}</h1>
+
+<p>{{{article.article_descr}}}</p>
+<a href="{{{article.link}}}" target="_blank"><button>Click to read more</button></a>
+
+<ul>
+  {{#each article.keywords}}
+  <li>{{{this}}}</li>
+  {{/each}}
+</ul>

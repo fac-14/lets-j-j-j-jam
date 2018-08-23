@@ -1,3 +1,9 @@
+const queries = require("../model/index");
+
 exports.get = (req, res) => {
-  res.render("article");
+  const { id } = req.params;
+  queries.getArticleDetail(parseInt(id)).then(resolve => {
+    console.log(resolve);
+    res.render("article", { article: resolve[0] });
+  });
 };

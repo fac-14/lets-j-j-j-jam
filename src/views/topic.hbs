@@ -1,2 +1,6 @@
+<h1>
+  {{topic}}</h1>
 
-<h1>{{topic}}</h1>
+{{#each articles}}
+<p><a href='article/{{this.id}}'>{{this.title}}</a></p>
+{{/each}}
