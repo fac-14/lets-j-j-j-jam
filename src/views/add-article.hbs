@@ -1,1 +1,17 @@
 <h1>Add your article here</h1>
+
+<form action="/add-article/new" method="POST">
+  <label for="title">Article title</label>
+  <input type="text" name="title" id="article_title_input">
+  <label for="article_link_input">Article URL:</label>
+  <input type="text" name="article_url" id="article_link_input">
+  <label for="topic_input">Topic:</label>
+  <input type="text" name="topic" id="topic_input">
+  <label for="description_input">Your description and comments:</label>
+  <input type="text" name="description" id="description_input">
+  <label for="keywords_input">Keywords:</label>
+  <input type="text" name="keywords" id="keywords_input">
+  <label for="img_url">Article Image URL:</label>
+  <input type="text" name="img_url" id="img_url">
+  <button type="submit">Submit</button>
+</form>

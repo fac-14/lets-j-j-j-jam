@@ -1,4 +1,4 @@
-const db = require('../../db/db_connection');
+const db = require("../../db/db_connection");
 
 const getTopics = ( ) => {
     return new Promise((resolve, reject) => {
@@ -16,5 +16,5 @@ const getTopics = ( ) => {
 
 module.exports = getTopics;
 // module.exports = db.query(
-//     `SELECT * FROM topics` 
+//     `SELECT * FROM topics`
 // );
