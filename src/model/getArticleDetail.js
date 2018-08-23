@@ -11,4 +11,6 @@ const db = require('../../db/db_connection');
     .catch(err => console.error('error!', err))
 }
 
+getArticleDetail(1);
+
 module.exports = getArticleDetail;
