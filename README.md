@@ -3,9 +3,7 @@ with Jessy, Mon, Art and Joe
 
 ## WE DID IT
 
-Find our site on Heroku [here](http://fac-article-sharing.herokuapp.com/sign-up)
-
-![](https://media.giphy.com/media/uWNo0J3XanmMu1OGu9/giphy.gif)
+Find our site on Heroku [here](http://fac-article-sharing.herokuapp.com/)
 
 ### How to install locally:
 
