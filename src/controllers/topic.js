@@ -1,3 +1,4 @@
 exports.get = (req, res) => {
-  res.render("topic", {query.getTopics});
+  const {topic} = req.params;
+  res.render("topic", {topic: topic});
 };

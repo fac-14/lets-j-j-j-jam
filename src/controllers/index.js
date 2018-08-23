@@ -12,7 +12,7 @@ const queries = require("../model/index");
 
 // create route handler
 router.get("/", home.get);
-router.get("/topic", topic.get);
+router.get("/topic/:topic", topic.get);
 router.get("/topic/article", article.get);
 router.get("/add-article", addArticle.get);
 router.get("/sign-up", signUp.get);
