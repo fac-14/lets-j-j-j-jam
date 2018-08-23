@@ -1,1 +1,16 @@
-<h1>Hello World</h1>
+<section class="main_container">
+  <h1 class="main_title">Topics</h1>
+  <p>Choose the topic to see all articles.</p>
+  <div class='topic-container'>
+      <ul>
+          {{#each topics}}
+            <li>
+                <article>
+                    <h3>Topic: {{this.topic_name}}</h3>
+                </article> 
+            </li>
+          {{/each}}
+      </ul>
+  </div>
+</section>
+
