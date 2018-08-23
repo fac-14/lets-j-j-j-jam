@@ -1,12 +1,16 @@
-<h1>Add your article here</h1>
-
 <form action="/add-article/new" method="POST">
+  <h1>New Article</h1>
   <label for="title">Article title</label>
   <input type="text" name="title" id="article_title_input">
   <label for="article_link_input">Article URL:</label>
   <input type="text" name="article_url" id="article_link_input">
   <label for="topic_input">Topic:</label>
-  <input type="text" name="topic" id="topic_input">
+  <input type="text" name="topic" id="topic_input" list="topic-list">
+  <datalist id="topic-list">
+    {{#each topic}}
+    <option value="{{this.topic_id}}">{{this.topic_name}}</option>
+    {{/each}}
+  </datalist>
   <label for="description_input">Your description and comments:</label>
   <input type="text" name="description" id="description_input">
   <label for="keywords_input">Keywords:</label>

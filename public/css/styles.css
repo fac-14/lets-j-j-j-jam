@@ -8,7 +8,6 @@
 body,
 html {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   background-color: #ecf0f1;
   font-family: "Titillium Web", sans-serif;
@@ -16,11 +15,16 @@ html {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Main Full Page Styles - JOE */
 
 main {
   padding-left: 128px;
   padding-right: 128px;
+  padding-top: 100px;
 }
 
 .main_container {
@@ -31,11 +35,55 @@ main {
   text-align: center;
 }
 
+/* Nav Bar styles  - MONIKA */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.navbar-ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  background-color: #233d4d;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-ul > li {
+  background-color: 4abdac;
+  padding: 0.5rem;
+  margin: 1rem 1rem 1rem 0;
+  font-size: 1rem;
+  min-width: 5vw;
+  text-align: center;
+}
+
 .home-header {
   width: 100%;
   color: #348176;
   padding: 0;
   margin: 0;
+}
+
+.navbar-ul > li > a {
+  text-decoration: none;
+}
+.navbar-ul > li > a:link {
+  color: white;
+}
+.navbar-ul > li > a:active {
+  color: white;
+}
+.navbar-ul > li > a:visited {
+  color: white;
+}
+.navbar-ul > li > a:hover {
+  color: white;
 }
 
 .home-header > h1 {
@@ -71,14 +119,83 @@ main {
   box-shadow: none;
 }
 
+/* Want to contribute partial styles - ARTEMIS */
+
+/* Form Styles - JESSIE */
+form {
+  width: 40vw;
+  padding: 20px 50px 30px;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.1);
+}
+form h1 {
+  text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border: none;
+  background: #ecf0f1;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 10px 4px;
+  margin: 10px 0 30px;
+}
+form button {
+  border: none;
+  padding: 10px 7px;
+  font-size: 1rem;
+  background: #4abdac;
+  color: #ecf0f1;
+  border-radius: 3px;
+  min-width: 100px;
+}
+form button:hover {
+  background: #3a998a;
+}
+form p {
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+form p a,
+form p a:visited {
+  color: #f7b733;
+}
+
+/* Want to contribute partial styles - ARTEMIS */
+
 .home > h3 {
   padding: auto;
   color: white;
 }
 
+#add-article-div {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background: #bcf2ea;
+  padding: 50px;
+  margin-top: 60px;
+  box-shadow: #dfdce3 4px 4px;
+}
+
 #home-link {
   text-decoration-line: none;
   color: white;
+}
+
+#add-article-div button {
+  border: none;
+  padding: 10px 7px;
+  font-size: 1rem;
+  background: #fe7f2d;
+  color: #ecf0f1;
+  border-radius: 3px;
+  min-width: 100px;
 }
 
 #id-1,
@@ -134,4 +251,12 @@ main {
 
 .footer {
   background-color: bisque;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+h2 {
+  color: #348176;
 }

@@ -1,6 +1,7 @@
 const db = require("../../db/db_connection");
 
 const addArticle = (articleData) => {
+  console.log(articleData);
   const { title, article_url, topic, description, keywords, img_url } = articleData;
   const keywordsArr = keywords.split(",");
   const user_id = 1;
