@@ -6,3 +6,4 @@ with Jessy, Mon, Art and Joe
 - get yourself a config.env file with DB_URL and SECRET
 
 ### Wireframe: 
+![wireframe pic](http://)
