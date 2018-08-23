@@ -1,11 +1,11 @@
-<h1>Log in here</h1>
-
 <form action="/login-check" method="POST">
+  <h1>Log in</h1>
   <label for="name">Name:</label>
-  <input type="text" name="name" id="name">
+  <input type="text" name="name" id="name" required>
   <label for="password">Password:</label>
-  <input type="password" name="password" id="password">
+  <input type="password" name="password" id="password" required>
   <button type="submit">Log in</button>
+  <p>Not registered?
+    <a href="/sign-up">Click here to sign up</a>
+  </p>
 </form>
-
-<p>Not registered? <a href="/sign-up">Click here to sign up</a></p>
