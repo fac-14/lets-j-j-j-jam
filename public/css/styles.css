@@ -1,34 +1,137 @@
 /* Colour Palatte 
-#GABDAC
-#FCGA1A
+#4ABDAC
+#FC4A1A
 #F7B733
-#DFDCE3 
+#DFDCE3
 */
 
-body, html {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+body,
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-color: #ecf0f1;
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Main Full Page Styles - JOE */
 
+main {
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.home-header {
+  width: 100%;
+  color: #348176;
+  padding: 0;
+  margin: 0;
+}
+
+.home-header > h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.home-header > h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.topic-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  margin: 8px;
+  box-shadow: #dfdce3 4px 4px;
+  cursor: pointer;
+}
+
+.home:hover {
+  box-shadow: none;
+}
+
+.home > h3 {
+  padding: auto;
+  color: white;
+}
+
+#home-link {
+  text-decoration-line: none;
+  color: white;
+}
+
+#id-1,
+#id-3,
+#id-5,
+#id-7,
+#id-9,
+#id-11,
+#id-13,
+#id-15 {
+  background-color: #4abdac;
+}
+
+#id-1:hover,
+#id-3:hover,
+#id-5:hover,
+#id-7:hover,
+#id-9:hover,
+#id-11:hover,
+#id-13:hover,
+#id-15:hover {
+  background-color: #549c91;
+}
+
+#id-2,
+#id-4,
+#id-6,
+#id-8,
+#id-10,
+#id-12,
+#id-14,
+#id-16 {
+  background-color: #f7b733;
+}
+
+#id-2:hover,
+#id-4:hover,
+#id-6:hover,
+#id-8:hover,
+#id-10:hover,
+#id-12:hover,
+#id-14:hover,
+#id-16:hover {
+  background-color: #a17927;
+}
 
 /* Nav Bar styles  - MONIKA */
-
-
-
 /* Form Styles - JESSIE */
 
-
-
 /* Want to contribute partial styles - ARTEMIS */
-
-
 
 /* Footer styles  - ARTEMIS*/
 
 .footer {
-    background-color: bisque;
+  background-color: bisque;
 }
-
-

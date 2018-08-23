@@ -1,16 +1,14 @@
 <section class="main_container">
-  <h1 class="main_title">Topics</h1>
-  <p>Choose the topic to see all articles.</p>
-  <div class='topic-container'>
-      <ul>
-          {{#each topics}}
-            <li>
-                <article>
-                    <h3><a href='/topic/{{this.topic_name}}'>{{this.topic_name}}</a></h3>
-                </article> 
-            </li>
-          {{/each}}
-      </ul>
-  </div>
-</section>
+    <header class="home-header">
+        <h1 class="main_title">Topics</h1>
+        <h2>Choose the topic to see all articles.</h2>
+    </header>
+    <div class='topic-container'>
+        {{#each topics}}
 
+        <button class="home" id='id-{{this.id}}' onclick="window.location.href='/topic/{{this.topic_name}}'">
+            <h3>{{this.topic_name}}</h3>
+        </button>
+        {{/each}}
+    </div>
+</section>
