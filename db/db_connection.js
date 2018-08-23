@@ -1,4 +1,4 @@
-const { Pool } = require('pg-promise');
+const pgp = require('pg-promise')();
 const url = require('url');
 require('env2')('./config.env');
 
@@ -17,4 +17,6 @@ const options = {
     ssl: params.hostname !== 'localhost'
 };
 
-module.exports = new Pool(options);
+const db = pgp(options);
+
+module.exports = db;
