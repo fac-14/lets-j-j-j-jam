@@ -41,6 +41,7 @@ app.use(
 app.set("port", process.env.PORT || 2000);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(controllers);
 
 module.exports = app;

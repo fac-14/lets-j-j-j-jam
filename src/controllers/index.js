@@ -11,9 +11,9 @@ const logIn = require("./log-in");
 const queries = require("../model/index");
 
 // create route handler
-router.get("/", logSessionCookie, home.get);
+router.get("/", home.get);
 router.get("/topic", topic.get);
-router.get("/topic/article", article.get);
+router.get("/topic/:topic", topic.get);
 router.get("/add-article", requiresLogin, addArticle.get);
 router.get("/sign-up", signUp.get);
 router.get("/log-in", logIn.get);

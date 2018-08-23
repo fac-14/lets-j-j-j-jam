@@ -1,0 +1,23 @@
+<header class='navbar'> 
+    <div class='navbar-container'>
+        <nav>
+            <ul>
+                {{#unless activePage.home}}
+                <li>
+                    <a href='/'>Home</a>
+                </li>
+                {{/unless}}
+                {{#unless activePage.sign-up}}
+                <li>
+                    <a href='/sign-up'>Sign-up</a>
+                </li>
+                {{/unless}}
+                {{#unless activePage.log-in}}
+                <li>
+                    <a href='/log-in'>Log in</a>
+                </li>
+                {{/unless}}
+            </ul>
+        </nav>
+    </div>
+</header>

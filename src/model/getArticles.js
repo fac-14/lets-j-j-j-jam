@@ -13,6 +13,6 @@ const getArticles = topicId => {
     .catch(err => console.error("error!", err));
 };
 
-// getArticles(11);
+        // getArticles(11);
 
 module.exports = getArticles;
