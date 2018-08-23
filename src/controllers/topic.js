@@ -1,3 +1,3 @@
 exports.get = (req, res) => {
-  res.render("topic");
+  res.render("topic", {query.getTopics});
 };
