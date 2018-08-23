@@ -31,6 +31,8 @@ tape("Posting on add item should return expected results", t => {
     .end((err, res) => {
       t.error(err, "no error");
       t.equals(typeof res, "object", "res should be object");
+      // console.log(req.body);
+      t.equals(req.body.topic, 'css', 'topic should be css');
       t.end();
     });
 });
