@@ -1,13 +1,15 @@
 /* Colour Palatte 
-#GABDAC
+#4ABDAC
 #FCGA1A
 #F7B733
 #DFDCE3 
 */
 
 body, html {
+    height: 100vh;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
 /* Main Full Page Styles - JOE */
@@ -21,14 +23,22 @@ body, html {
 
 
 
-/* Want to contribute partial styles - ARTEMIS */
-
-
-
 /* Footer styles  - ARTEMIS*/
 
-.footer {
-    background-color: bisque;
+footer {
+    position: absolute;
+    bottom; 0;
+    width: 100%;
+    background-color: #F7B733;
+    color: #464334;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    
 }
 
 
