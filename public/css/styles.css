@@ -181,6 +181,7 @@ form p a:visited {
   background: #bcf2ea;
   padding: 50px;
   margin-top: 60px;
+  margin-bottom: 220px;
   box-shadow: #dfdce3 4px 4px;
 }
 
@@ -251,11 +252,15 @@ form p a:visited {
 /* Footer styles  - ARTEMIS*/
 
 .footer {
-  background-color: bisque;
-  margin: 0;
+  width: 100%;
+  background-color: #F7B733;
+  color: #233D4D;
   text-align: center;
-  padding: 10px;
-  margin-top: 50px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
