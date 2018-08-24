@@ -207,7 +207,8 @@ form p a:visited {
   min-width: 100px;
 }
 
-.home:nth-child(1n):hover {
+.home:nth-child(1n):hover,
+.home:nth-child(1n):focus {
   background-color: #fe7f2d;
   transform: scale(1.1);
   transition: all 0.4s ease-out;
@@ -268,6 +269,128 @@ form p a:visited {
   margin-top: 50px;
 }
 
+h1,
 h2 {
   color: #348176;
+}
+
+/* Article page styling */
+
+.article-page {
+  box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 32px;
+}
+
+.article-img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.article-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-details > h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.article-details > h2 {
+  margin: 0;
+  margin-top: 8px;
+}
+
+.article-details > p {
+  margin-top: 0;
+}
+
+.keywords > span {
+  margin-right: 24px;
+}
+
+.article-button {
+  border: none;
+  padding: 10px 7px;
+  font-size: 1rem;
+  background: #348176;
+  color: #ecf0f1;
+  border-radius: 3px;
+  min-width: 100px;
+  margin: 48px 0px 24px 0px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.article-button:hover,
+.article-button:focus {
+  background-color: #fe7f2d;
+  transition: all 0.1s ease-out;
+}
+
+/* topic page styling */
+
+.topic-articles {
+  width: 100%;
+  display: flex;
+  background: #348176;
+  padding: 8px;
+  box-shadow: #dfdce3 4px 4px;
+}
+
+.topic-articles > a {
+  text-decoration-line: none;
+  color: white;
+  width: 100%;
+}
+
+.topic-articles:nth-child(1n):hover,
+.home:nth-child(1n):focus {
+  background-color: #fe7f2d;
+  transform: scale(1.01);
+  transition: all 0.4s ease-out;
+}
+
+.topic-articles:nth-child(10n + 1) {
+  background-color: hsl(262, 52%, 34%);
+}
+
+.topic-articles:nth-child(10n + 2) {
+  background-color: hsl(171, 62%, 60%);
+}
+
+.topic-articles:nth-child(10n + 3) {
+  background-color: hsl(262, 52%, 45%);
+}
+
+.topic-articles:nth-child(10n + 4) {
+  background-color: hsl(171, 52%, 50%);
+}
+
+.topic-articles:nth-child(10n + 5) {
+  background-color: hsl(262, 52%, 55%);
+}
+
+.topic-articles:nth-child(10n + 6) {
+  background-color: hsl(171, 52%, 43%);
+}
+
+.topic-articles:nth-child(10n + 7) {
+  background-color: hsl(262, 52%, 65%);
+}
+
+.topic-articles:nth-child(10n + 8) {
+  background-color: hsl(171, 52%, 33%);
+}
+
+.topic-articles:nth-child(10n + 9) {
+  background-color: hsl(262, 40%, 75%);
+}
+
+.topic-articles:nth-child(10n + 10) {
+  background-color: hsl(171, 52%, 27%);
 }
