@@ -5,6 +5,8 @@ with Jessy, Mon, Art and Joe
 
 Find our site on Heroku [here](http://fac-article-sharing.herokuapp.com/)
 
+*HEADS UP!!!! WE HAVE NO ERROR HANDLING ON OUR LOG IN FORM SO IF YOU ENTER AN INCORRECT PASSWORD OR USERNAME YOU WILL CRASH THE HEROKU SERVER!!! YOU HAVE BEEN WARNED!!!
+
 ### How to install locally:
 
 1) Clone the project and run `npm install`
