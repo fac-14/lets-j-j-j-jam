@@ -113,6 +113,8 @@ main {
   margin: 8px;
   box-shadow: #dfdce3 4px 4px;
   cursor: pointer;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1rem;
 }
 
 .home:hover {
@@ -199,48 +201,50 @@ form p a:visited {
   min-width: 100px;
 }
 
-#id-1,
-#id-3,
-#id-5,
-#id-7,
-#id-9,
-#id-11,
-#id-13,
-#id-15 {
-  background-color: #4abdac;
+.home:nth-child(1n):hover {
+  background-color: #fe7f2d;
+  transform: scale(1.1);
+  transition: all 0.4s ease-out;
 }
 
-#id-1:hover,
-#id-3:hover,
-#id-5:hover,
-#id-7:hover,
-#id-9:hover,
-#id-11:hover,
-#id-13:hover,
-#id-15:hover {
-  background-color: #549c91;
+.home:nth-child(10n + 1) {
+  background-color: hsl(262, 52%, 34%);
 }
 
-#id-2,
-#id-4,
-#id-6,
-#id-8,
-#id-10,
-#id-12,
-#id-14,
-#id-16 {
-  background-color: #f7b733;
+.home:nth-child(10n + 2) {
+  background-color: hsl(171, 62%, 60%);
 }
 
-#id-2:hover,
-#id-4:hover,
-#id-6:hover,
-#id-8:hover,
-#id-10:hover,
-#id-12:hover,
-#id-14:hover,
-#id-16:hover {
-  background-color: #a17927;
+.home:nth-child(10n + 3) {
+  background-color: hsl(262, 52%, 45%);
+}
+
+.home:nth-child(10n + 4) {
+  background-color: hsl(171, 52%, 50%);
+}
+
+.home:nth-child(10n + 5) {
+  background-color: hsl(262, 52%, 55%);
+}
+
+.home:nth-child(10n + 6) {
+  background-color: hsl(171, 52%, 43%);
+}
+
+.home:nth-child(10n + 7) {
+  background-color: hsl(262, 52%, 65%);
+}
+
+.home:nth-child(10n + 8) {
+  background-color: hsl(171, 52%, 33%);
+}
+
+.home:nth-child(10n + 9) {
+  background-color: hsl(262, 40%, 75%);
+}
+
+.home:nth-child(10n + 10) {
+  background-color: hsl(171, 52%, 27%);
 }
 
 /* Nav Bar styles  - MONIKA */
