@@ -263,6 +263,65 @@ form p a:visited {
   margin-top: 50px;
 }
 
+h1,
 h2 {
   color: #348176;
+}
+
+/* Article page styling */
+
+.article-page {
+  box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 32px;
+}
+
+.article-img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.article-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-details > h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.article-details > h2 {
+  margin: 0;
+  margin-top: 8px;
+}
+
+.article-details > p {
+  margin-top: 0;
+}
+
+.keywords > span {
+  margin-right: 24px;
+}
+
+.article-button {
+  border: none;
+  padding: 10px 7px;
+  font-size: 1rem;
+  background: #348176;
+  color: #ecf0f1;
+  border-radius: 3px;
+  min-width: 100px;
+  margin: 48px 0px 24px 0px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.article-button:hover,
+.article-button:focus {
+  background-color: #fe7f2d;
+  transition: all 0.1s ease-out;
 }

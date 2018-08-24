@@ -1,10 +1,22 @@
-<h1>{{{article.title}}}</h1>
+<section class="article-page">
 
-<p>{{{article.article_descr}}}</p>
-<a href="{{{article.link}}}" target="_blank"><button>Click to read more</button></a>
+  <img class="article-img" src="{{article.img_url}}" alt="Flexbox-Zombies-Image">
 
-<ul>
-  {{#each article.keywords}}
-  <li>{{{this}}}</li>
-  {{/each}}
-</ul>
+  <article class="article-details">
+    <h1>{{{article.title}}}</h1>
+
+    <h2>Description:</h2>
+    <p>{{{article.article_descr}}}</p>
+
+    <h2>Keywords:</h2>
+    <div class="keywords">
+      {{#each article.keywords}}
+      <span><i>{{{this}}}</i></span>
+      {{/each}}
+    </div>
+
+    <a href="{{{article.link}}}" target="_blank"><button class="article-button">Click to read more</button></a>
+
+  </article>
+
+</section>
