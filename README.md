@@ -34,4 +34,9 @@ npm run dev
 9) Profit ???
 
 ### Wireframe: 
+
+![first wireframe](https://www.dropbox.com/s/y7ti3fgxdlyxoou/IMG_1514.JPG?raw=1)
+
 ![wireframe pic](https://github.com/fac-14/lets-j-j-j-jam/blob/master/IMG-2984.JPG?raw=true)
+
+
