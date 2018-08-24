@@ -11,7 +11,7 @@ module.exports = {
     getArticleDetail: getArticleDetail,
     getArticles: getArticles,
     getTopics: getTopics,
-    doesUserExist: loginCheck,
+    checkPassword: loginCheck,
     addArticle: addArticle,
     getName: getName
 };

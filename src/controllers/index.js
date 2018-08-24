@@ -8,6 +8,7 @@ const addArticle = require("./add-article");
 const signUp = require("./sign-up");
 const logIn = require("./log-in");
 const checkname = require("./checkname");
+const formError = require("./formError");
 
 const queries = require("../model/index");
 
@@ -20,6 +21,7 @@ router.get("/add-article", requiresLogin, addArticle.get);
 router.get("/sign-up", signUp.get);
 router.get("/username/:name", checkname.get);
 router.get("/log-in", logIn.get);
+router.get("/formError/:type", formError.get);
 router.post("/add-article/new", (req, res) => {
   // console.log('req: ', req.body)
   queries.addArticle(req.body);
@@ -32,17 +34,24 @@ router.post("/add-user", (req, res) => {
 });
 router.post("/login-check", (req, res) => {
   queries
-    .doesUserExist(req.body)
+    .checkPassword(req.body)
     .then(resolve => {
       if (resolve) {
         // if password valid, set session to logged in and redirect
         req.session.loggedIn = true;
         res.redirect(302, "/");
       } else {
-        res.redirect(302, "/log-in");
+        res.redirect(302, "/formError/pw");
       }
     })
-    .catch(e => console.log(e));
+    .catch(e => {
+      if (e == "user not found") {
+        res.redirect(302, "/formError/un");
+        // res.send("username not found")
+      } else {
+        console.log(e)
+      }
+    });
 });
 router.get("/log-out", (req, res) => {
   req.session.loggedIn = false;
