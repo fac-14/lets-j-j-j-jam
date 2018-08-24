@@ -7,6 +7,7 @@ const article = require("./article");
 const addArticle = require("./add-article");
 const signUp = require("./sign-up");
 const logIn = require("./log-in");
+const checkname = require("./checkname");
 
 const queries = require("../model/index");
 
@@ -17,6 +18,7 @@ router.get("/topic/:topic", topic.get);
 router.get("/topic/article/:id", article.get);
 router.get("/add-article", requiresLogin, addArticle.get);
 router.get("/sign-up", signUp.get);
+router.get("/username/:name", checkname.get);
 router.get("/log-in", logIn.get);
 router.post("/add-article/new", (req, res) => {
   // console.log('req: ', req.body)
