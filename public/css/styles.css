@@ -169,6 +169,12 @@ form p a:visited {
   color: #f7b733;
 }
 
+#username-error-msg {
+  margin: 0;
+  color: red;
+  text-align: left;
+}
+
 /* Want to contribute partial styles - ARTEMIS */
 
 .home > h3 {

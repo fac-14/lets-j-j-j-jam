@@ -10,7 +10,7 @@ const addArticle = articleData => {
     keywords,
     img_url
   } = articleData;
-  const keywordsArr = keywords.split(",");
+  const keywordsArr = keywords.toUpperCase().split(",");
   const user_id = 1;
   const sql_getTopicID = `SELECT id FROM topics WHERE topic_name='${topic}';`;
   

@@ -1,13 +1,16 @@
 <form action="/add-user" method="POST">
   <h1>Sign up</h1>
-  <label for="name">Name:</label>
-  <input type="text" name="name" id="name" required autocomplete="off">
+  <label for="name">Username:</label>
+  <p id="username-error-msg"></p> 
+  <input type="text" name="name" id="signup-username" required autocomplete="off">
   <label for="email">Email:</label>
   <input type="email" name="email" id="email" required autocomplete="off">
   <label for="password">Password:</label>
   <input type="password" name="password" id="password" required autocomplete="off">
-  <button type="submit">Register</button>
+  <button type="submit" id="register-btn">Register</button>
   <p>Already registered?
     <a href="/log-in">Click here to log in</a>
   </p>
 </form>
+
+<script src="/js/main.js"></script>
